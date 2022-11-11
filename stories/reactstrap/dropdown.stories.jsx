@@ -7,41 +7,39 @@ import {
 } from "reactstrap";
 import { within, userEvent } from "@storybook/testing-library";
 
-function Subject({ direction, ...args }) {
+function Template(args) {
   return (
-    <div className="d-flex p-5">
-      <UncontrolledDropdown
-        // isOpen={dropdownOpen}
-        // toggle={toggle}
-        direction={direction}
-      >
-        <DropdownToggle caret>Dropdown</DropdownToggle>
-        <DropdownMenu {...args}>
-          <DropdownItem header>Header</DropdownItem>
-          <DropdownItem>Some Action</DropdownItem>
-          <DropdownItem text>Dropdown Item Text</DropdownItem>
-          <DropdownItem disabled>
-            Action (disabled)
-          </DropdownItem>
-          <DropdownItem divider />
-          <DropdownItem>Foo Action</DropdownItem>
-          <DropdownItem>Bar Action</DropdownItem>
-          <DropdownItem>Quo Action</DropdownItem>
-        </DropdownMenu>
-      </UncontrolledDropdown>
-    </div>
+    <UncontrolledDropdown {...args}>
+      <DropdownToggle caret>Dropdown</DropdownToggle>
+      <DropdownMenu>
+        <DropdownItem header>Header</DropdownItem>
+        <DropdownItem>Some Action</DropdownItem>
+        <DropdownItem text>Dropdown Item Text</DropdownItem>
+        <DropdownItem disabled>Action (disabled)</DropdownItem>
+        <DropdownItem divider />
+        <DropdownItem>Foo Action</DropdownItem>
+        <DropdownItem>Bar Action</DropdownItem>
+      </DropdownMenu>
+    </UncontrolledDropdown>
   );
 }
 
 export default {
-  title: "Reactstrap/Dropdown",
-  component: Subject,
+  title: "Components/Dropdown",
+  component: UncontrolledDropdown,
+  render: Template,
+  argTypes: {
+    direction: {
+      options: ["up", "down", "left", "right"],
+      control: { type: "select" },
+    },
+  },
 };
 
-export const Uncontrolled = {};
+export const Default = {};
 
 export const Open = {
-  ...Uncontrolled,
+  ...Default,
   play: async ({ canvasElement }) => {
     const canvas = within(canvasElement);
     const loginButton = await canvas.getByRole("button", {
