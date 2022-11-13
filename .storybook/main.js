@@ -9,10 +9,10 @@ module.exports = {
     "@storybook/addon-interactions"
   ],
   "framework": "@storybook/react",
-  "refs": {
-    "reactstrap": { 
-      "title": "Reactstrap", 
-      "url": "https://reactstrap.github.io"
-    }
-   }
+  // "refs": {
+  //   "reactstrap": { 
+  //     "title": "Reactstrap", 
+  //     "url": "https://reactstrap.github.io"
+  //   }
+  //  }
 }
