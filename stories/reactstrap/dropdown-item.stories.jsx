@@ -1,6 +1,7 @@
 import * as React from "react";
 import {
   Dropdown,
+  DropdownToggle,
   DropdownMenu,
   DropdownItem,
 } from "reactstrap";
@@ -123,12 +124,10 @@ function addDocsDescription(description) {
 
 function Template(args) {
   return (
-    <Dropdown isOpen={true}>
-      <DropdownMenu>
-        <DropdownItem {...args} />
-        <DropdownItem>A dropdown item</DropdownItem>
-      </DropdownMenu>
-    </Dropdown>
+    <div>
+      <DropdownItem {...args} />
+      <DropdownItem>A dropdown item</DropdownItem>
+    </div>
   );
 }
 
