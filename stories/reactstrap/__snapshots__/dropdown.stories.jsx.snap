@@ -1,0 +1,123 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Components/Dropdown Default smoke-test 1`] = `
+<div class="dropdown">
+  <button type="button"
+          aria-haspopup="true"
+          aria-expanded="false"
+          class="dropdown-toggle btn btn-secondary"
+  >
+    Dropdown
+  </button>
+  <div tabindex="-1"
+       role="menu"
+       aria-hidden="true"
+       class="dropdown-menu"
+  >
+    <h6 tabindex="-1"
+        class="dropdown-header"
+    >
+      Header
+    </h6>
+    <button type="button"
+            tabindex="0"
+            role="menuitem"
+            class="dropdown-item"
+    >
+      Some Action
+    </button>
+    <span tabindex="-1"
+          class="dropdown-item-text"
+    >
+      Dropdown Item Text
+    </span>
+    <button type="button"
+            disabled
+            tabindex="-1"
+            class="disabled dropdown-item"
+    >
+      Action (disabled)
+    </button>
+    <div tabindex="-1"
+         class="dropdown-divider"
+    >
+    </div>
+    <button type="button"
+            tabindex="0"
+            role="menuitem"
+            class="dropdown-item"
+    >
+      Foo Action
+    </button>
+    <button type="button"
+            tabindex="0"
+            role="menuitem"
+            class="dropdown-item"
+    >
+      Bar Action
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Components/Dropdown Open play-test 1`] = `
+<div class="dropdown show">
+  <button type="button"
+          aria-haspopup="true"
+          aria-expanded="true"
+          class="dropdown-toggle btn btn-secondary"
+  >
+    Dropdown
+  </button>
+  <div tabindex="-1"
+       role="menu"
+       aria-hidden="false"
+       class="dropdown-menu show"
+       style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 38px, 0px);"
+       x-placement="bottom-start"
+  >
+    <h6 tabindex="-1"
+        class="dropdown-header"
+    >
+      Header
+    </h6>
+    <button type="button"
+            tabindex="0"
+            role="menuitem"
+            class="dropdown-item"
+    >
+      Some Action
+    </button>
+    <span tabindex="-1"
+          class="dropdown-item-text"
+    >
+      Dropdown Item Text
+    </span>
+    <button type="button"
+            disabled
+            tabindex="-1"
+            class="disabled dropdown-item"
+    >
+      Action (disabled)
+    </button>
+    <div tabindex="-1"
+         class="dropdown-divider"
+    >
+    </div>
+    <button type="button"
+            tabindex="0"
+            role="menuitem"
+            class="dropdown-item"
+    >
+      Foo Action
+    </button>
+    <button type="button"
+            tabindex="0"
+            role="menuitem"
+            class="dropdown-item"
+    >
+      Bar Action
+    </button>
+  </div>
+</div>
+`;

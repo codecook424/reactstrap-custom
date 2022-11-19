@@ -1,0 +1,122 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Components/DropdownItem Active smoke-test 1`] = `
+<div style="min-height: 5rem;">
+  <div>
+    <button type="button"
+            aria-current="true"
+            tabindex="0"
+            role="menuitem"
+            class="dropdown-item active"
+    >
+      An active dropdown item
+    </button>
+    <button type="button"
+            tabindex="0"
+            role="menuitem"
+            class="dropdown-item"
+    >
+      A dropdown item
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Components/DropdownItem Default smoke-test 1`] = `
+<div style="min-height: 5rem;">
+  <div>
+    <button type="button"
+            tabindex="0"
+            role="menuitem"
+            class="dropdown-item"
+    >
+      A dropdown item
+    </button>
+    <button type="button"
+            tabindex="0"
+            role="menuitem"
+            class="dropdown-item"
+    >
+      A dropdown item
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Components/DropdownItem Disabled smoke-test 1`] = `
+<div style="min-height: 5rem;">
+  <div>
+    <button type="button"
+            disabled
+            tabindex="-1"
+            class="disabled dropdown-item"
+    >
+      A disabled dropdown item
+    </button>
+    <button type="button"
+            tabindex="0"
+            role="menuitem"
+            class="dropdown-item"
+    >
+      A dropdown item
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Components/DropdownItem Divider smoke-test 1`] = `
+<div style="min-height: 5rem;">
+  <div>
+    <div tabindex="-1"
+         class="dropdown-divider"
+    >
+      A text dropdown item (can't click)
+    </div>
+    <button type="button"
+            tabindex="0"
+            role="menuitem"
+            class="dropdown-item"
+    >
+      A dropdown item
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Components/DropdownItem Header smoke-test 1`] = `
+<div style="min-height: 5rem;">
+  <div>
+    <h6 tabindex="-1"
+        class="dropdown-header"
+    >
+      A header
+    </h6>
+    <button type="button"
+            tabindex="0"
+            role="menuitem"
+            class="dropdown-item"
+    >
+      A dropdown item
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Components/DropdownItem Text smoke-test 1`] = `
+<div style="min-height: 5rem;">
+  <div>
+    <span tabindex="-1"
+          class="dropdown-item-text"
+    >
+      A text dropdown item (can't click)
+    </span>
+    <button type="button"
+            tabindex="0"
+            role="menuitem"
+            class="dropdown-item"
+    >
+      A dropdown item
+    </button>
+  </div>
+</div>
+`;
